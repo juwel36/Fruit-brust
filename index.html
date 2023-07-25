@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit brust</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js" integrity="sha512-6m6AtgVSg7JzStQBuIpqoVuGPVSAK5Sp/ti6ySu6AjRDa1pX8mIl1TwP9QmKXU+4Mhq/73SzOk6mbNvyj9MPzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  
+
+<style>
+.lato-font{
+  font-family: 'Lato', sans-serif;
+
+}
+.font-awesome {
+  width: 10px;}
+
+
+</style>
+
+
+</head>
+<body class="lato-font">
+  
+  <header class="max-w-6xl m-auto ">
+<!-- nav section start    -->
+
+    <div class="navbar bg-[#F85559] lg:h-20 rounded-full mb-11 mt-2">
+      <div class="navbar-center hidden lg:flex ">
+        <ul class="menu menu-horizontal px-1 text-white">
+          <li><a>Home</a></li>
+          <li><a>About US</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+      <div class="navbar-start gap-32">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About US</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="w-10" src="./images/logo.png" alt="">
+          <p class="whitespace-nowrap text-lg lg:text-3xl  text-white font-semibold">Fruit Burst</p>
+        </div>
+
+
+      </div>
+      <div class="navbar-end hidden md:flex lg:flex">
+        <div class="relative ">
+          <i class="fas fa-search absolute top-3 left-72 text-gray-500"></i>
+          <input type="text" class="w-80 py-2 pl-12 pr-4 mr-4 text-gray-700 bg-white border rounded-2xl" placeholder="Search here">
+        </div>
+      </div>
+    </div>
+    
+
+<!-- nav section end    -->
+
+<!-- banner section start -->
+<div class="p-3 md:4 lg:p-0">
+<div class="carousel w-full rounded-lg">
+  <div id="slide1" class="carousel-item relative w-full h-full">
+    <div class="absolute inset-0 text-white flex flex-col justify-center items-center py-16 px-3 md:p-10 lg:p-36 lg:space-y-3 bg-gradient-to-br from-[#11111191] to-[#111111a7]">
+     
+      <h1 class="text-xl md:text-3xl lg:text-5xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
+      <h3 class="text-sm md:text-xl lg:text-sm">We supply highly quality organic products</h3>
+      <button class="p-1 lg:p-3 bg-[#F85559] mt-2 rounded-lg ">Shop Now</button>
+    </div>
+
+    <img src="./images/banner1.png" class="w-full h-full object-cover" />
+
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 md:left-5 right-2 md:right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+      <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+    </div>
+  </div>
+
+  <div id="slide2" class="carousel-item relative w-full h-full">
+    <div class="absolute inset-0 text-white flex flex-col justify-center items-center py-16 px-3 md:p-10 lg:p-36 lg:space-y-3 bg-gradient-to-br from-[#11111190] to-[#111111b6]">
+      <h1 class="text-xl md:text-3xl lg:text-5xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
+      <h3 class="text-sm md:text-xl lg:text-2xl">UIX Designer</h3>
+     
+    </div>
+
+    <img src="./images/banner2.png" class="w-full h-full object-cover" />
+
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 md:left-5 right-2 md:right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+      <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+    </div>
+  </div>
+
+
+
+  <div id="slide3" class="carousel-item relative w-full h-full">
+    <div class="absolute inset-0 text-white flex flex-col justify-center items-center py-16 px-3 md:p-10 lg:p-36 lg:space-y-3 bg-gradient-to-br from-[#11111198] to-[#111111c0]">
+      <h1 class="text-xl md:text-3xl lg:text-5xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
+      <h3 class="text-sm md:text-xl lg:text-2xl">UIX Designer</h3>
+     
+    </div>
+
+    <img src="./images/banner3.png" class="w-full h-full object-cover" />
+
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 md:left-5 right-2 md:right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+      <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+    </div>
+  </div>
+
+  <div id="slide4" class="carousel-item relative w-full h-full">
+    <div class="absolute inset-0 text-white flex flex-col justify-center items-center py-16 px-3 md:p-10 lg:p-36 lg:space-y-3 bg-gradient-to-br from-[#1111118b] to-[#111111c0]">
+      <h1 class="text-xl md:text-3xl lg:text-5xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
+      <h3 class="text-sm md:text-xl lg:text-2xl">UIX Designer</h3>
+    
+    </div>
+
+    <img src="./images/banner4.png" class="w-full h-full object-cover" />
+
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 md:left-5 right-2 md:right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
+      <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+    </div>
+
+</div>
+</div>
+<!-- banner section end -->
+  </header>
+
+  <main class="max-w-6xl m-auto ">
+
+<!-- deal of the day section -->
+<section class="mt-16">
+<div class="">
+<!-- main div -->
+
+<div class="flex flex-col lg:flex-row justify-between items-center mb-16 space-y-8 p-7 md:m-10 lg:p-0 lg:m-0 lg:pb-14">
+<div class=" space-y-3 text-center lg:text-left">
+<h1 class="text-4xl font-black">Deal of the day</h1>
+<p class="text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+</div>
+
+<div class="grid grid-flow-col gap-5 text-center auto-cols-max items-center">
+  <div class="flex flex-col">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:30 ;"></span>
+    </span>
+    days
+  </div> 
+  <i class="fa-solid fa-ellipsis-vertical fa- pb-5"></i>
+  <div class="flex flex-col">
+    <span class="countdown font-mono text-5xl ">
+    
+      <span style="--value:10;"></span>
+    </span>
+    
+    hours
+  </div> 
+  <i class="fa-solid fa-ellipsis-vertical fa- pb-5"></i>
+  <div class="flex flex-col">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:24;"></span>
+    </span>
+    min
+  </div> 
+  <i class="fa-solid fa-ellipsis-vertical fa- pb-5"></i>
+  <div class="flex flex-col">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:34;"></span>
+    </span>
+    sec
+  </div>
+</div>
+
+
+</div>
+
+<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+<footer>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
